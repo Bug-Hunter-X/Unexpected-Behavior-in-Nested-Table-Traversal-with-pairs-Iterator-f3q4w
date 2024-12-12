@@ -1,0 +1,3 @@
+This repository demonstrates a potential issue with using Lua's `pairs` iterator for traversing nested tables. The `foo` function recursively iterates through a table. However, because `pairs` doesn't guarantee order, modifications to the table during iteration could lead to unexpected results, potentially skipping elements or accessing elements that no longer exist.
+
+The provided solution offers a safer approach.
